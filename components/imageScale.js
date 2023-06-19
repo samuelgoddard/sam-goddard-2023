@@ -11,7 +11,7 @@ export default function ImageScale({ image, w, h, p, alt }) {
     offset: ["0% 35%", "end start"]
   })
   
-  const scale = useTransform(scrollYProgress,[0, 1],[1, 1.35],{ clamp: false })
+  const scale = useTransform(scrollYProgress,[0, 1],[1, 1.15],{ clamp: false })
   
   return (
     <m.div style={{ scale: scale }} className="will-change-transform absolute inset-0">

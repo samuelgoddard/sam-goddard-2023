@@ -19,7 +19,7 @@ export default function Header() {
             </div>
           </div>
 
-          <div className="col-span-1 text-center hidden lg:flex justify-center items-center">
+          <div className="col-span-2 text-center hidden lg:flex justify-center items-center">
             <div class="relative flex overflow-hidden lg:max-w-[200px] xl:max-w-[250px]">
               <div class="animate-marquee whitespace-nowrap">
                 <span class="mr-2">Available July &apos;23&nbsp;&nbsp;—</span>
@@ -39,7 +39,7 @@ export default function Header() {
             </div>
           </div>
           
-          <div className="col-span-1">
+          {/* <div className="col-span-1">
             <nav className="ml-auto flex space-x-3 lg:space-x-5 justify-center text-center">
               <Link href="/" className="flex items-center italic group">
                 <span className={`block w-[6px] lg:w-2 h-[6px] lg:h-2 bg-current rounded-full mr-[6px] translate-y-[-2px] ${router.asPath == '/' ? 'scale-[1]' : 'scale-[0]' }`}></span>
@@ -50,9 +50,9 @@ export default function Header() {
                 <span className="block relative overflow-hidden">About <span className="absolute inset-0 w-full h-full flex items-center justify-start"><span className="block transition-transform ease-in-out duration-[350ms] w-full h-[1px] bg-current translate-y-[-100%] translate-x-[-100%] lg:group-hover:translate-x-0"></span></span></span>
               </Link>
             </nav>
-          </div>
+          </div> */}
 
-          <div className="col-span-1 text-right">
+          <div className="col-start-3 lg:col-start-4 col-span-1 text-right">
             <Link href="mailto:hello@samgoddard.co.uk" className="group flex justify-end">
               <span className="block relative overflow-hidden leading-none">Let&apos;s Collab<span className="hidden lg:inline">orate</span> <span className="absolute inset-0 w-full h-full flex items-center justify-start"><span className="block transition-transform ease-in-out duration-[350ms] w-full h-[1px] bg-current translate-y-[-100%] translate-x-[-100%] lg:group-hover:translate-x-0"></span></span></span>
               </Link>
