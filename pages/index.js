@@ -41,8 +41,8 @@ export default function Home() {
               <Container>
                 <article>
                   <div className="pb-[65vw] md:pb-[40vw] xl:pb-[35.25vw] mb-8 lg:mb-16 relative">
-                    <div className="absolute bottom-0 right-0 w-10/12 md:w-8/12 lg:w-[46%] aspect-square overflow-hidden">
-                      <div className="opacity-[0.2] absolute inset-0 overflow-hidden">
+                    <div className="absolute bottom-0 right-0 w-10/12 md:w-8/12 lg:w-[46%] aspect-square overflow-hidden bg-[#000] bg-opacity-50">
+                      <div className="opacity-[0.25] absolute inset-0 overflow-hidden ">
                         <ImageScale image="/images/bio.jpg" alt="Portrait of Sam" />
                       </div>
                     </div>
@@ -126,8 +126,8 @@ export default function Home() {
 
                   <div className="pb-[10vw] lg:pb-[6.5vw]">
                     <div className="w-[95%] lg:w-[85%] max-w-screen-2xl">
-                      <h2 className="leading-[1.05] text-[clamp(30px,0.65rem+3.7vw,55px)] font-display tracking-tight w-[95%] lg:w-[90%] flex flex-wrap">
-                        I like to think that I make an approachable and considerate partner for development projects. I have a keen eye for details and a particular focus on interactivity without the sacrifice of performance &amp; accessibility fundamentals. Over the years I&rsquo;ve been fortunate enough to work with agencies & individuals across both the globe and a variety of sectors, often with the combined goal of making the world a better place.
+                      <h2 className="leading-[1.05] text-[clamp(30px,0.65rem+3.7vw,60px)] font-display tracking-tight w-[95%] lg:w-[90%] flex flex-wrap uppercase">
+                        I like to think that I make an approachable and considerate partner for development projects. I have a keen eye for details and a particular focus on interactivity without the sacrifice of performance &amp; accessibility fundamentals.
                       </h2>
                     </div>
                   </div>
@@ -135,7 +135,7 @@ export default function Home() {
                   <div className="pb-[20vw] lg:pb-[12.5vw]">
                     <h2 className="font-mono uppercase tracking-tight leading-[1] text-[10px] mb-3 pb-0 relative overflow-hidden"><m.span className="block" variants={reveal}>Features / Awards</m.span></h2>
 
-                    <ul>
+                    <ul className="uppercase">
                       {awards.map((e, i) => {
                         return (
                           <li className="block" key={i}>
@@ -155,34 +155,34 @@ export default function Home() {
                     </div>
                     <div className="col-span-10 lg:col-span-7">
                       <div className="max-w-[820px]">
-                        <h2 className="leading-[1.1] block text-[clamp(30px,0.92rem+2vw,45px)] font-display tracking-tight mb-12">I&rsquo;d love to hear about projects I can help out with and am always open to hearing about new opportunities, so please feel free to get in touch via any of the channels below.</h2>
+                        <h2 className="leading-[1.1] block text-[clamp(30px,0.92rem+2vw,45px)] font-display tracking-tight mb-12 uppercase">I&rsquo;d love to hear about projects I can help out with and am always open to hearing about new opportunities, so please feel free to get in touch via any of the channels below.</h2>
 
                         <div className="mb-8 lg:mb-12">
-                          <span className="block font-mono uppercase tracking-tight leading-none text-[10px] mb-3 pb-0">Email</span>
-                          <span className="uppercase leading-[1.1] inline-block text-2xl tracking-tight relative">
-                            <span className="relative"><span className="block absolute bottom-0 left-0 w-full h-[1px] translate-y-[-1px] bg-white/50"></span>hello</span>&nbsp;[at]&nbsp;<span className="relative"><span className="block absolute bottom-0 left-0 w-full h-[1px] translate-y-[-1px] bg-white/50"></span>samgoddard.co.uk</span>
+                          <span className="block font-mono tracking-tight leading-none text-[10px] mb-3 pb-0">Email</span>
+                          <span className="leading-[1.1] inline-block text-2xl tracking-tight relative">
+                            <span className="relative"><span className="block absolute bottom-0 left-0 w-full h-[1px] translate-y-[-1px] bg-white/50"></span>Hello</span>&nbsp;[at]&nbsp;<span className="relative"><span className="block absolute bottom-0 left-0 w-full h-[1px] translate-y-[-1px] bg-white/50"></span>samgoddard.co.uk</span>
                           </span>
                         </div>
 
                         <div className="mb-8 lg:mb-12">
-                          <span className="block font-mono uppercase tracking-tight leading-none text-[10px] mb-3 pb-0">Twitter</span>
-                          <span className="uppercase leading-[1.1] inline-block text-2xl tracking-tight relative">
-                            @<span className="relative"><span className="block absolute bottom-0 left-0 w-full h-[1px] translate-y-[-1px] bg-white/50"></span>samuelgoddard</span>
+                          <span className="block font-mono tracking-tight leading-none text-[10px] mb-3 pb-0">Twitter</span>
+                          <span className="leading-[1.1] inline-block text-2xl tracking-tight relative">
+                            @<span className="relative"><span className="block absolute bottom-0 left-0 w-full h-[1px] translate-y-[-1px] bg-white/50"></span>Samuelgoddard</span>
                           </span>
                         </div>
 
                         <div className="mb-8 lg:mb-12">
-                          <span className="block font-mono uppercase tracking-tight leading-none text-[10px] mb-3 pb-0">Type set with</span>
+                          <span className="block font-mono tracking-tight leading-none text-[10px] mb-3 pb-0">Type set with</span>
                           <span className="block">
-                            <span className="uppercase leading-[1.1] inline-block text-2xl tracking-tight relative"><span className="block absolute bottom-0 left-0 w-full h-[1px] translate-y-[-1px] bg-white/50"></span>Migra</span>
-                            <span className="uppercase leading-[1.1] inline-block text-2xl tracking-tight">&nbsp;&amp;&nbsp;</span>
-                            <span className="uppercase leading-[1.1] inline-block text-2xl tracking-tight relative"><span className="block absolute bottom-0 left-0 w-full h-[1px] translate-y-[-1px] bg-white/50"></span>Editorial Old</span>
+                            <span className="leading-[1.1] inline-block text-2xl tracking-tight relative"><span className="block absolute bottom-0 left-0 w-full h-[1px] translate-y-[-1px] bg-white/50"></span>Migra</span>
+                            <span className="leading-[1.1] inline-block text-2xl tracking-tight">&nbsp;&amp;&nbsp;</span>
+                            <span className="leading-[1.1] inline-block text-2xl tracking-tight relative"><span className="block absolute bottom-0 left-0 w-full h-[1px] translate-y-[-1px] bg-white/50"></span>Editorial Old</span>
                           </span>
                         </div>
                         
                         <div>
-                          <span className="block font-mono uppercase tracking-tight leading-none text-[10px] mb-3 pb-0">Site Design</span>
-                          <span className="uppercase leading-[1.1] inline-block text-2xl tracking-tight relative"><span className="block absolute bottom-0 left-0 w-full h-[1px] translate-y-[-1px] bg-white/50"></span>Isaac Powell</span>
+                          <span className="block font-mono tracking-tight leading-none text-[10px] mb-3 pb-0">Site Design</span>
+                          <span className="leading-[1.1] inline-block text-2xl tracking-tight relative"><span className="block absolute bottom-0 left-0 w-full h-[1px] translate-y-[-1px] bg-white/50"></span>Isaac Powell</span>
                         </div>
                       </div>
                     </div>
@@ -195,45 +195,45 @@ export default function Home() {
                     <div className="col-span-10 lg:col-span-7">
                       <div className="max-w-[900px] grid grid-cols-2">
                         <div className="mb-8 lg:mb-12 col-span-1">
-                          <span className="block font-mono uppercase tracking-tight leading-none text-[10px] mb-3 pb-0">Front-end</span>
+                          <span className="block font-mono  tracking-tight leading-none text-[10px] mb-3 pb-0">Front-end</span>
                           <ul>
-                            <li className="uppercase leading-[1.1] block text-2xl tracking-tight relative mb-2">
+                            <li className=" leading-[1.1] block text-2xl tracking-tight relative mb-2">
                               <a href="https://react.dev/" target="_blank" rel="noreferrer noopener" className="relative"><span className="block absolute bottom-0 left-0 w-full h-[1px] translate-y-[-1px] bg-black/50"></span>React</a>
                             </li>
-                            <li className="uppercase leading-[1.1] block text-2xl tracking-tight relative mb-2">
+                            <li className=" leading-[1.1] block text-2xl tracking-tight relative mb-2">
                               <a href="https://nextjs.org/" target="_blank" rel="noreferrer noopener" className="relative"><span className="block absolute bottom-0 left-0 w-full h-[1px] translate-y-[-1px] bg-black/50"></span>NextJs</a>
                             </li>
-                            <li className="uppercase leading-[1.1] block text-2xl tracking-tight relative mb-2">
+                            <li className=" leading-[1.1] block text-2xl tracking-tight relative mb-2">
                               <a href="https://tailwindcss.com/" target="_blank" rel="noreferrer noopener" className="relative"><span className="block absolute bottom-0 left-0 w-full h-[1px] translate-y-[-1px] bg-black/50"></span>Tailwind</a>
                             </li>
-                            <li className="uppercase leading-[1.1] block text-2xl tracking-tight relative mb-2">
+                            <li className=" leading-[1.1] block text-2xl tracking-tight relative mb-2">
                               <a href="https://www.framer.com/motion/" target="_blank" rel="noreferrer noopener" className="relative"><span className="block absolute bottom-0 left-0 w-full h-[1px] translate-y-[-1px] bg-black/50"></span>Framer Motion</a>
                             </li>
-                            <li className="uppercase leading-[1.1] block text-2xl tracking-tight relative mb-2">
+                            <li className=" leading-[1.1] block text-2xl tracking-tight relative mb-2">
                               <a href="https://lenis.studiofreight.com/" target="_blank" rel="noreferrer noopener" className="relative"><span className="block absolute bottom-0 left-0 w-full h-[1px] translate-y-[-1px] bg-black/50"></span>Lenis Scroll</a>
                             </li>
                           </ul>
                         </div>
 
                         <div className="mb-8 lg:mb-12 col-span-1">
-                          <span className="block font-mono uppercase tracking-tight leading-none text-[10px] mb-3 pb-0">Back-end</span>
+                          <span className="block font-mono  tracking-tight leading-none text-[10px] mb-3 pb-0">Back-end</span>
                           <ul>
-                            <li className="uppercase leading-[1.1] block text-2xl tracking-tight relative mb-2">
+                            <li className=" leading-[1.1] block text-2xl tracking-tight relative mb-2">
                               <a href="https://www.sanity.io/" target="_blank" rel="noreferrer noopener" className="relative"><span className="block absolute bottom-0 left-0 w-full h-[1px] translate-y-[-1px] bg-black/50"></span>Sanity CMS</a>
                             </li>
-                            <li className="uppercase leading-[1.1] block text-2xl tracking-tight relative mb-2">
+                            <li className=" leading-[1.1] block text-2xl tracking-tight relative mb-2">
                               <a href="https://vercel.com/" target="_blank" rel="noreferrer noopener" className="relative"><span className="block absolute bottom-0 left-0 w-full h-[1px] translate-y-[-1px] bg-black/50"></span>Vercel</a>
                             </li>
                           </ul>
                         </div>
 
                         <div className="mb-8 lg:mb-12 col-span-1">
-                          <span className="block font-mono uppercase tracking-tight leading-none text-[10px] mb-3 pb-0">Tooling</span>
+                          <span className="block font-mono  tracking-tight leading-none text-[10px] mb-3 pb-0">Tooling</span>
                           <ul>
-                            <li className="uppercase leading-[1.1] block text-2xl tracking-tight relative mb-2">
+                            <li className=" leading-[1.1] block text-2xl tracking-tight relative mb-2">
                               <a href="https://github.com/samuelgoddard" target="_blank" rel="noreferrer noopener" className="relative"><span className="block absolute bottom-0 left-0 w-full h-[1px] translate-y-[-1px] bg-black/50"></span>Github</a>
                             </li>
-                            <li className="uppercase leading-[1.1] block text-2xl tracking-tight relative mb-2">
+                            <li className=" leading-[1.1] block text-2xl tracking-tight relative mb-2">
                               <a href="#" target="_blank" rel="noreferrer noopener" className="relative"><span className="block absolute bottom-0 left-0 w-full h-[1px] translate-y-[-1px] bg-black/50"></span>Other Stuff</a>
                             </li>
                           </ul>

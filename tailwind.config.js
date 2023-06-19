@@ -30,7 +30,7 @@ module.exports = {
         },
       },
       colors: {
-        'black': '#1E1E1E',
+        'black': '#191919',
         'white': '#BEBEBE'
       },
       fontFamily: {
