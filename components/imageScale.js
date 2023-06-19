@@ -8,7 +8,7 @@ export default function ImageScale({ image, w, h, p, alt }) {
 
   const { scrollYProgress } = useScroll({
     target: ref,
-    offset: ["0% 35%", "end start"]
+    offset: ["0% 45%", "end start"]
   })
   
   const scale = useTransform(scrollYProgress,[0, 1],[1, 1.15],{ clamp: false })

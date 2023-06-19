@@ -12,7 +12,7 @@ export default function Header() {
           <div className="col-span-1 text-left">
             <div className="lg:flex lg:space-x-5">
               <Link href="/" className="inline-block lg:block group">
-                <span className="inline lg:block relative overflow-hidden">S<span className="hidden lg:inline">am</span><span className="hidden lg:inline">&nbsp;</span>G<span className="hidden lg:inline">oddard</span>&nbsp; <span className="hidden lg:flex absolute inset-0 w-full h-full items-center justify-start"><span className="block transition-transform ease-in-out duration-[350ms] w-full h-[1px] bg-current translate-y-[-100%] translate-x-[-100%] lg:group-hover:translate-x-0"></span></span></span>
+                <span className="inline lg:block relative overflow-hidden">S<span className="hidden lg:inline">am</span><span className="hidden lg:inline">&nbsp;</span>G<span className="hidden lg:inline">oddard</span>&nbsp; <span className="hidden lg:flex absolute inset-0 w-full h-full items-center justify-start"><span className="block transition-transform ease-in-out duration-[350ms] w-full h-[1px] bg-current translate-y-[-100%] translate-x-[-110%] lg:group-hover:translate-x-0"></span></span></span>
               </Link>
               
               <span className="inline lg:block">&apos;89 —</span>
@@ -20,7 +20,7 @@ export default function Header() {
           </div>
 
           <div className="col-span-2 text-center hidden lg:flex justify-center items-center">
-            <div class="relative flex overflow-hidden lg:max-w-[200px] xl:max-w-[250px]">
+            <div class="relative flex overflow-hidden lg:max-w-[250px] xl:max-w-[300px]">
               <div class="animate-marquee whitespace-nowrap">
                 <span class="mr-2">Available July &apos;23&nbsp;&nbsp;—</span>
                 <span class="mr-2">Creative Developer &nbsp;&nbsp;—</span>
@@ -43,18 +43,18 @@ export default function Header() {
             <nav className="ml-auto flex space-x-3 lg:space-x-5 justify-center text-center">
               <Link href="/" className="flex items-center italic group">
                 <span className={`block w-[6px] lg:w-2 h-[6px] lg:h-2 bg-current rounded-full mr-[6px] translate-y-[-2px] ${router.asPath == '/' ? 'scale-[1]' : 'scale-[0]' }`}></span>
-                <span className="block relative overflow-hidden">Works <span className="absolute inset-0 w-full h-full flex items-center justify-start"><span className="block transition-transform ease-in-out duration-[350ms] w-full h-[1px] bg-current translate-y-[-100%] translate-x-[-100%] lg:group-hover:translate-x-0"></span></span></span>
+                <span className="block relative overflow-hidden">Works <span className="absolute inset-0 w-full h-full flex items-center justify-start"><span className="block transition-transform ease-in-out duration-[350ms] w-full h-[1px] bg-current translate-y-[-100%] translate-x-[-110%] lg:group-hover:translate-x-0"></span></span></span>
               </Link>
               <Link href="/about" className="flex items-center italic group">
                 <span className={`block w-[6px] lg:w-2 h-[6px] lg:h-2 bg-current rounded-full mr-[6px] translate-y-[-2px] ${router.asPath == '/about' ? 'scale-[1]' : 'scale-[0]' }`}></span>
-                <span className="block relative overflow-hidden">About <span className="absolute inset-0 w-full h-full flex items-center justify-start"><span className="block transition-transform ease-in-out duration-[350ms] w-full h-[1px] bg-current translate-y-[-100%] translate-x-[-100%] lg:group-hover:translate-x-0"></span></span></span>
+                <span className="block relative overflow-hidden">About <span className="absolute inset-0 w-full h-full flex items-center justify-start"><span className="block transition-transform ease-in-out duration-[350ms] w-full h-[1px] bg-current translate-y-[-100%] translate-x-[-110%] lg:group-hover:translate-x-0"></span></span></span>
               </Link>
             </nav>
           </div> */}
 
           <div className="col-start-3 lg:col-start-4 col-span-1 text-right">
             <Link href="mailto:hello@samgoddard.co.uk" className="group flex justify-end">
-              <span className="block relative overflow-hidden leading-none">Let&apos;s Collab<span className="hidden lg:inline">orate</span> <span className="absolute inset-0 w-full h-full flex items-center justify-start"><span className="block transition-transform ease-in-out duration-[350ms] w-full h-[1px] bg-current translate-y-[-100%] translate-x-[-100%] lg:group-hover:translate-x-0"></span></span></span>
+              <span className="block relative overflow-hidden leading-none">Let&apos;s Collab<span className="hidden lg:inline">orate</span> <span className="absolute inset-0 w-full h-full flex items-center justify-start"><span className="block transition-transform ease-in-out duration-[350ms] w-full h-[1px] bg-current translate-y-[-100%] translate-x-[-110%] lg:group-hover:translate-x-0"></span></span></span>
               </Link>
           </div>
         </div>

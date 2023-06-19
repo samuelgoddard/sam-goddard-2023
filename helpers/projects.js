@@ -4,8 +4,6 @@ export const projects = [
     url: "https://shiftwalk.studio",
     image: "sg-img-sw.jpg"
   },{
-    title: "Arc Studio",
-  },{
     title: "West Of West",
     url: "https://westofwest.com",
     image: "sg-img-ww.jpg"
@@ -14,7 +12,7 @@ export const projects = [
     url: "https://study-arch.com",
     image: "sg-img-study.jpg"
   },{
-    title: "Jason O'Rear",
+    title: "Jason O’Rear",
     url: "https://jasonorear.com",
     image: "sg-img-jor.jpg"
   },{
@@ -28,11 +26,13 @@ export const projects = [
   },
   {
     title: "Palmar",
-    url: "https://palmaragency.co.uk/"
+    url: "https://palmaragency.co.uk/",
+    image: "sg-palmar.jpg"
   },
   {
     title: "PRB Architects",
-    url: "https://prb-a.com"
+    url: "https://prb-a.com",
+    image: "sg-prb.jpg"
   },
   {
     title: "Fnatic",
