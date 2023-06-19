@@ -196,7 +196,7 @@ export default function Home() {
                   </div>
 
                   <nav className="pb-[20vw] lg:pb-[12.5vw]">
-                    <h2 className="font-mono uppercase tracking-tight leading-none text-[10px] mb-3 lg:mb-3 pb-0">Featured Projects</h2>
+                    <h2 className="font-mono uppercase tracking-tight leading-none text-[10px] mb-3 lg:mb-3 pb-0">Latest Projects</h2>
                     <ul className="border-t border-white/30">
                       {projects.map((e, i) => {
                         let state = 'lg:pl-0'
@@ -324,23 +324,13 @@ export default function Home() {
                             </span>
                           </div>
                           
-                          <div className="col-span-1">
+                          <div className="mb-8 lg:mb-12 col-span-1">
                             <span className="block font-mono tracking-tight leading-none text-[10px] uppercase mb-3 pb-0">Site Design</span>
                             <a href="https://ijpowell.co.uk" target="_blank" rel="noopener noreferrer" className="leading-[1.1] inline-block text-2xl tracking-tight relative group"><span className="block absolute bottom-0 left-0 w-full h-[1px] translate-y-[-1px] bg-white/50 "></span><span className="block relative overflow-hidden">Isaac Powell <span className="absolute inset-0 w-full h-full flex items-center justify-start"><span className="block transition-transform ease-in-out duration-[350ms] w-full h-[1px] bg-current translate-y-[-100%] translate-x-[-110%] lg:group-hover:translate-x-0"></span></span></span></a>
                           </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
 
-                  <div className="grid grid-cols-12 pb-[20vw] lg:pb-[12.5vw]">
-                    <div className="col-span-12 lg:col-span-4 mb-2 lg:mb-0">
-                      <h2 className="font-mono uppercase tracking-tight leading-none text-[10px] mb-3 pb-0">Current Tech Stack</h2>
-                    </div>
-                    <div className="col-span-12 lg:col-span-7">
-                      <div className="max-w-[900px] grid grid-cols-2">
-                        <div className="mb-8 lg:mb-12 col-span-1">
-                          <span className="uppercase block font-mono  tracking-tight leading-none text-[10px] mb-3 pb-0">Front-end</span>
+                          <div className="mb-8 lg:mb-12 col-span-1">
+                          <span className="uppercase block font-mono  tracking-tight leading-none text-[10px] mb-3 pb-0">Front-end Stack</span>
                           <ul>
                             <li className=" leading-[1.1] block text-2xl tracking-tight relative mb-[3px]">
                               <a href="https://react.dev/" target="_blank" rel="noreferrer noopener" className="relative group overflow-hidden inline-block"><span className="block absolute bottom-0 left-0 w-full h-[1px] translate-y-[-1px] bg-white/50"></span>React <span className="absolute inset-0 w-full h-full flex items-center justify-start"><span className="block transition-transform ease-in-out duration-[350ms] w-full h-[1px] bg-current translate-y-[-100%] translate-x-[-110%] lg:group-hover:translate-x-0"></span></span></a>
@@ -360,8 +350,8 @@ export default function Home() {
                           </ul>
                         </div>
 
-                        <div className="mb-8 lg:mb-12 col-span-1">
-                          <span className="uppercase block font-mono  tracking-tight leading-none text-[10px] mb-3 pb-0">Back-end</span>
+                        <div className="col-span-1">
+                          <span className="uppercase block font-mono  tracking-tight leading-none text-[10px] mb-3 pb-0">Back-end Stack</span>
                           <ul>
                             <li className=" leading-[1.1] block text-2xl tracking-tight relative mb-[3px]">
                               <a href="https://www.sanity.io/" target="_blank" rel="noreferrer noopener" className="relative group overflow-hidden inline-block"><span className="block absolute bottom-0 left-0 w-full h-[1px] translate-y-[-1px] bg-white/50"></span>Sanity CMS<span className="absolute inset-0 w-full h-full flex items-center justify-start"><span className="block transition-transform ease-in-out duration-[350ms] w-full h-[1px] bg-current translate-y-[-100%] translate-x-[-110%] lg:group-hover:translate-x-0"></span></span></a>
@@ -369,19 +359,12 @@ export default function Home() {
                             <li className=" leading-[1.1] block text-2xl tracking-tight relative mb-[3px]">
                               <a href="https://vercel.com/" target="_blank" rel="noreferrer noopener" className="relative group overflow-hidden inline-block"><span className="block absolute bottom-0 left-0 w-full h-[1px] translate-y-[-1px] bg-white/50"></span>Vercel<span className="absolute inset-0 w-full h-full flex items-center justify-start"><span className="block transition-transform ease-in-out duration-[350ms] w-full h-[1px] bg-current translate-y-[-100%] translate-x-[-110%] lg:group-hover:translate-x-0"></span></span></a>
                             </li>
+
+                            <li className=" leading-[1.1] block text-2xl tracking-tight relative mb-[3px]">
+                              <a href="https://github.com/samuelgoddard/" target="_blank" rel="noreferrer noopener" className="relative group overflow-hidden inline-block"><span className="block absolute bottom-0 left-0 w-full h-[1px] translate-y-[-1px] bg-white/50"></span>Github<span className="absolute inset-0 w-full h-full flex items-center justify-start"><span className="block transition-transform ease-in-out duration-[350ms] w-full h-[1px] bg-current translate-y-[-100%] translate-x-[-110%] lg:group-hover:translate-x-0"></span></span></a>
+                            </li>
                           </ul>
                         </div>
-
-                        <div className="mb-8 lg:mb-12 col-span-1">
-                          <span className="uppercase block font-mono  tracking-tight leading-none text-[10px] mb-3 pb-0">Tooling</span>
-                          <ul>
-                            <li className=" leading-[1.1] block text-2xl tracking-tight relative mb-[3px]">
-                              <a href="https://github.com/samuelgoddard" target="_blank" rel="noreferrer noopener" className="relative group overflow-hidden inline-block"><span className="block absolute bottom-0 left-0 w-full h-[1px] translate-y-[-1px] bg-white/50"></span>Github<span className="absolute inset-0 w-full h-full flex items-center justify-start"><span className="block transition-transform ease-in-out duration-[350ms] w-full h-[1px] bg-current translate-y-[-100%] translate-x-[-110%] lg:group-hover:translate-x-0"></span></span></a>
-                            </li>
-                            <li className=" leading-[1.1] block text-2xl tracking-tight relative mb-[3px]">
-                              <a href="#" target="_blank" rel="noreferrer noopener" className="relative group overflow-hidden inline-block"><span className="block absolute bottom-0 left-0 w-full h-[1px] translate-y-[-1px] bg-white/50"></span>Other Stuff<span className="absolute inset-0 w-full h-full flex items-center justify-start"><span className="block transition-transform ease-in-out duration-[350ms] w-full h-[1px] bg-current translate-y-[-100%] translate-x-[-110%] lg:group-hover:translate-x-0"></span></span></a>
-                            </li>
-                          </ul>
                         </div>
                       </div>
                     </div>
