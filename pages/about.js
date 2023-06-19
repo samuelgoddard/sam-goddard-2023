@@ -40,7 +40,7 @@ export default function About() {
                             initial={{ y: '100%' }}
                             animate="enter"
                             exit="exit"
-                            transition={{ delay: 0, duration: 0.55, ease: [0.65, 0, 0.35, 1] }}
+                            transition={{ delay: 0, duration: 0.55, ease: [0.83, 0, 0.17, 1] }}
                             variants={{
                               enter: i => ({
                                 y: 0,
@@ -64,9 +64,9 @@ export default function About() {
                       {awards.map((e, i) => {
                         return (
                           <li className="block" key={i}>
-                            <span className="uppercase border-b border-black/30 w-full py-2 lg:py-2 block lg:flex lg:items-end">
-                              <span className="leading-[0.9] block text-[clamp(22px,0.92rem+1.5vw,40px)] font-display tracking-tight mb-2 lg:mb-0 relative overflow-hidden"><m.span className="block" variants={reveal}>{e.title}</m.span></span>
-                              <span className="ml-auto leading-[0.9] font-serif lg:font-display block text-xl lg:text-[clamp(16px,0.92rem+1.5vw,40px)] tracking-tight relative overflow-hidden"><m.span className="block" variants={reveal}>{e.award}</m.span></span>
+                            <span className=" border-b border-black/30 w-full py-2 lg:py-1 block lg:flex lg:items-end">
+                              <span className="leading-[1.275] block text-[clamp(22px,0.92rem+1.5vw,40px)] font-display tracking-tight mb-1 lg:mb-0 relative overflow-hidden"><m.span className="block" variants={reveal}>{e.title}</m.span></span>
+                              <span className="ml-auto leading-[1.275] font-serif lg:font-display block text-xl lg:text-[clamp(16px,0.92rem+1.5vw,40px)] tracking-tight relative overflow-hidden"><m.span className="block" variants={reveal}>{e.award}</m.span></span>
                             </span>
                           </li>
                         )
@@ -76,24 +76,8 @@ export default function About() {
 
                   <div className="pb-[10vw] lg:pb-[6.5vw]">
                     <div className="w-[95%] lg:w-[85%] max-w-screen-2xl">
-                      <h2 className="leading-[1] uppercase text-[clamp(28px,0.65rem+4.7vw,75px)] font-display tracking-tight w-full flex flex-wrap overflow-hidden">
-                        <SplitText
-                          indent
-                          initial={{ y: '100%' }}
-                          animate="enter"
-                          exit="exit"
-                          transition={{ delay: 0, duration: 0.55, ease: [0.65, 0, 0.35, 1] }}
-                          variants={{
-                            enter: i => ({
-                              y: 0,
-                            }),
-                            exit: i => ({
-                              y: '100%',
-                            })
-                          }}
-                        >
-                          Over the years I&rsquo;ve been fortunate enough to work with agencies & individuals across a variety of sectors, often with the goal of making the world a better place
-                        </SplitText>
+                      <h2 className="leading-[1.05] text-[clamp(30px,0.65rem+3.7vw,55px)] font-display tracking-tight w-[95%] lg:w-[90%] flex flex-wrap">
+                        I like to think that I make an approachable and considerate partner for development projects. I have a keen eye for details and a particular focus on interactivity without the sacrifice of performance &amp; accessibility fundamentals. Over the years I&rsquo;ve been fortunate enough to work with agencies & individuals across both the globe and a variety of sectors, often with the combined goal of making the world a better place.
                       </h2>
                     </div>
                   </div>
@@ -108,16 +92,19 @@ export default function About() {
                           <span className="block font-mono uppercase tracking-tight leading-none text-[10px] mb-3 pb-0">Front-end</span>
                           <ul>
                             <li className="uppercase leading-[1.1] block text-2xl tracking-tight relative mb-2">
-                              <span className="relative"><span className="block absolute bottom-0 left-0 w-full h-[1px] translate-y-[-1px] bg-black/50"></span>NextJs</span>
+                              <a href="https://react.dev/" target="_blank" rel="noreferrer noopener" className="relative"><span className="block absolute bottom-0 left-0 w-full h-[1px] translate-y-[-1px] bg-black/50"></span>React</a>
                             </li>
                             <li className="uppercase leading-[1.1] block text-2xl tracking-tight relative mb-2">
-                              <span className="relative"><span className="block absolute bottom-0 left-0 w-full h-[1px] translate-y-[-1px] bg-black/50"></span>Tailwind</span>
+                              <a href="https://nextjs.org/" target="_blank" rel="noreferrer noopener" className="relative"><span className="block absolute bottom-0 left-0 w-full h-[1px] translate-y-[-1px] bg-black/50"></span>NextJs</a>
                             </li>
                             <li className="uppercase leading-[1.1] block text-2xl tracking-tight relative mb-2">
-                              <span className="relative"><span className="block absolute bottom-0 left-0 w-full h-[1px] translate-y-[-1px] bg-black/50"></span>Framer Motion</span>
+                              <a href="https://tailwindcss.com/" target="_blank" rel="noreferrer noopener" className="relative"><span className="block absolute bottom-0 left-0 w-full h-[1px] translate-y-[-1px] bg-black/50"></span>Tailwind</a>
                             </li>
                             <li className="uppercase leading-[1.1] block text-2xl tracking-tight relative mb-2">
-                              <span className="relative"><span className="block absolute bottom-0 left-0 w-full h-[1px] translate-y-[-1px] bg-black/50"></span>Lenis Scroll</span>
+                              <a href="https://www.framer.com/motion/" target="_blank" rel="noreferrer noopener" className="relative"><span className="block absolute bottom-0 left-0 w-full h-[1px] translate-y-[-1px] bg-black/50"></span>Framer Motion</a>
+                            </li>
+                            <li className="uppercase leading-[1.1] block text-2xl tracking-tight relative mb-2">
+                              <a href="https://lenis.studiofreight.com/" target="_blank" rel="noreferrer noopener" className="relative"><span className="block absolute bottom-0 left-0 w-full h-[1px] translate-y-[-1px] bg-black/50"></span>Lenis Scroll</a>
                             </li>
                           </ul>
                         </div>
@@ -126,10 +113,10 @@ export default function About() {
                           <span className="block font-mono uppercase tracking-tight leading-none text-[10px] mb-3 pb-0">Back-end</span>
                           <ul>
                             <li className="uppercase leading-[1.1] block text-2xl tracking-tight relative mb-2">
-                              <span className="relative"><span className="block absolute bottom-0 left-0 w-full h-[1px] translate-y-[-1px] bg-black/50"></span>Sanity CMS</span>
+                              <a href="https://www.sanity.io/" target="_blank" rel="noreferrer noopener" className="relative"><span className="block absolute bottom-0 left-0 w-full h-[1px] translate-y-[-1px] bg-black/50"></span>Sanity CMS</a>
                             </li>
                             <li className="uppercase leading-[1.1] block text-2xl tracking-tight relative mb-2">
-                              <span className="relative"><span className="block absolute bottom-0 left-0 w-full h-[1px] translate-y-[-1px] bg-black/50"></span>Vercel</span>
+                              <a href="https://vercel.com/" target="_blank" rel="noreferrer noopener" className="relative"><span className="block absolute bottom-0 left-0 w-full h-[1px] translate-y-[-1px] bg-black/50"></span>Vercel</a>
                             </li>
                           </ul>
                         </div>
@@ -138,10 +125,10 @@ export default function About() {
                           <span className="block font-mono uppercase tracking-tight leading-none text-[10px] mb-3 pb-0">Tooling</span>
                           <ul>
                             <li className="uppercase leading-[1.1] block text-2xl tracking-tight relative mb-2">
-                              <span className="relative"><span className="block absolute bottom-0 left-0 w-full h-[1px] translate-y-[-1px] bg-black/50"></span>Github</span>
+                              <a href="https://github.com/samuelgoddard" target="_blank" rel="noreferrer noopener" className="relative"><span className="block absolute bottom-0 left-0 w-full h-[1px] translate-y-[-1px] bg-black/50"></span>Github</a>
                             </li>
                             <li className="uppercase leading-[1.1] block text-2xl tracking-tight relative mb-2">
-                              <span className="relative"><span className="block absolute bottom-0 left-0 w-full h-[1px] translate-y-[-1px] bg-black/50"></span>Other Stuff</span>
+                              <a href="#" target="_blank" rel="noreferrer noopener" className="relative"><span className="block absolute bottom-0 left-0 w-full h-[1px] translate-y-[-1px] bg-black/50"></span>Other Stuff</a>
                             </li>
                           </ul>
                         </div>

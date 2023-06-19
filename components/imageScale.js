@@ -19,7 +19,7 @@ export default function ImageScale({ image, w, h, p, alt }) {
         fill
         src={image}
         alt={alt}
-        className={`w-full h-full inset-0 object-cover object-center transition-all ease-ak duration-[1000ms]  ${imageIsLoaded ? 'scale-1' : 'scale-105' }`}
+        className={`w-full h-full inset-0 object-cover object-center transition-all ease-ak duration-[1000ms] will-change-transform ${imageIsLoaded ? 'scale-1' : 'scale-105' }`}
         ref={ref}
         onLoad={event => {
           const target = event.target;

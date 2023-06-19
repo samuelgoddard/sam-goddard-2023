@@ -1,27 +1,27 @@
 export const awards = [
   {
-    title: "Awwwards",
-    award: "Site Of The Day"
+    title: "AWWWARDS",
+    award: "Site Of The Day (3)"
   },{
-    title: "Awwwards",
-    award: "Developer Award"
+    title: "AWWWARDS",
+    award: "Developer Award (3)"
   },{
-    title: "Awwwards",
-    award: "Mobile Of The Week"
+    title: "AWWWARDS",
+    award: "Mobile Of The Week (1)"
   },{
-    title: "Awwwards",
-    award: "Developer Of The Year"
+    title: "AWWWARDS",
+    award: "Developer Of The Year (Kudos)"
   },{
     title: "CSSDA",
-    award: "Site Of The Day"
+    award: "Site Of The Day (3)"
   },{
-    title: "CoDrops",
-    award: "Site Of The Week"
+    title: "Codrops",
+    award: "Site Of The Week (2)"
   },{
     title: "Admire The Web",
-    award: "Featured Site"
+    award: "Featured Site (6)"
   },{
     title: "The Brand Identity",
-    award: "Featured Site"
+    award: "Featured Site (3)"
   }
 ]

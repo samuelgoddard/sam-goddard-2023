@@ -42,6 +42,7 @@ export default function Home() {
                     <ul className="border-t border-white/30">
                       {projects.map((e, i) => {
                         let state = 'lg:pl-0'
+                        let zoomState = 'scale-[1.05]'
                         let innerState = 'lg:opacity-100'
                         if (hovered) {
                           innerState = 'lg:opacity-[0.075]'
@@ -49,6 +50,7 @@ export default function Home() {
                         if (i==current) {
                           state = 'lg:pl-[1.75vw]'
                           innerState = 'lg:opacity-100'
+                          zoomState = 'scale-[1]'
                         }
 
                         return (
@@ -65,10 +67,19 @@ export default function Home() {
                                 <m.span className="block" variants={reveal}>{e.url ? 'View Live' : 'Coming Soon' }</m.span>
                               </span>
                               
-                              <div className="absolute -top-5 right-[70px] z-[10] w-5/12 aspect-[16/11.5] pointer-events-none">
+                              <div className="absolute -top-5 right-[70px] z-[10] w-[35%] max-w-[600px] aspect-[16/10.7] pointer-events-none">
                                 {e.image && (
                                   <div className="absolute top-0 right-0 w-full h-full transition-opacity ease-in-out duration-[400ms] opacity-0 lg:group-hover:opacity-[1] z-[10] overflow-hidden">
-                                    <Image src={`/images/${e.image}`} fill className="absolute w-full h-full object-cover object-center" alt={`Screenshot of the ${e.title} projects home page`} />
+                                    <Image src={`/images/${e.image}`} fill className={`absolute w-full h-full object-cover object-center transition-transform ease-[cubic-bezier([0.83,0,0.17,1])] duration-[650ms] ${zoomState}`} alt={`Screenshot of the ${e.title} projects home page`} />
+                                  </div>
+                                )}
+
+                                {e.video && (
+                                  <div className="absolute top-0 right-0 w-full h-full transition-opacity ease-in-out duration-[400ms] opacity-0 lg:group-hover:opacity-[1] z-[10] overflow-hidden">
+                                    <video loop={true} autoPlay="autoplay" playsInline={true} muted className={`object-cover object-center w-full h-full absolute inset-0 ${zoomState}`}>
+                                      <source src={`/videos/${e.video}`} type="video/mp4" />
+                                      Sorry. Your browser does not support the video tag.
+                                    </video>
                                   </div>
                                 )}
                               </div>
@@ -84,13 +95,20 @@ export default function Home() {
                       <h2 className="font-mono uppercase tracking-tight leading-none text-[10px] mb-3 pb-0">Let&rsquo;s Collaborate</h2>
                     </div>
                     <div className="col-span-10 lg:col-span-7">
-                      <div className="max-w-[900px]">
-                        <h2 className="uppercase leading-[1.1] block text-[clamp(30px,0.92rem+2vw,45px)] font-display tracking-tight mb-12">I&rsquo;m always open to hearing about new projects and opportunities, so please feel free to get in touch via any of the channels below.</h2>
+                      <div className="max-w-[820px]">
+                        <h2 className="leading-[1.1] block text-[clamp(30px,0.92rem+2vw,45px)] font-display tracking-tight mb-12">I&rsquo;d love to hear about projects I can help out with and am always open to hearing about new opportunities, so please feel free to get in touch via any of the channels below.</h2>
 
                         <div className="mb-8 lg:mb-12">
                           <span className="block font-mono uppercase tracking-tight leading-none text-[10px] mb-3 pb-0">Email</span>
                           <span className="uppercase leading-[1.1] inline-block text-2xl tracking-tight relative">
                             <span className="relative"><span className="block absolute bottom-0 left-0 w-full h-[1px] translate-y-[-1px] bg-white/50"></span>hello</span>&nbsp;[at]&nbsp;<span className="relative"><span className="block absolute bottom-0 left-0 w-full h-[1px] translate-y-[-1px] bg-white/50"></span>samgoddard.co.uk</span>
+                          </span>
+                        </div>
+
+                        <div className="mb-8 lg:mb-12">
+                          <span className="block font-mono uppercase tracking-tight leading-none text-[10px] mb-3 pb-0">Twitter</span>
+                          <span className="uppercase leading-[1.1] inline-block text-2xl tracking-tight relative">
+                            @<span className="relative"><span className="block absolute bottom-0 left-0 w-full h-[1px] translate-y-[-1px] bg-white/50"></span>samuelgoddard</span>
                           </span>
                         </div>
 
