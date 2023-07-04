@@ -23,21 +23,21 @@ export default function Header() {
           </div>
 
           <div className="col-span-2 text-center hidden lg:flex justify-center items-center">
-            <div class="relative flex overflow-hidden lg:max-w-[250px] xl:max-w-[300px]">
-              <div class="animate-marquee whitespace-nowrap">
-                <span class="mr-2">Available {mo} &apos;23&nbsp;&nbsp;—</span>
-                <span class="mr-2">Creative Developer &nbsp;&nbsp;—</span>
-                <span class="mr-2">Available {mo} &apos;23&nbsp;&nbsp;—</span>
-                <span class="mr-2">Creative Developer &nbsp;&nbsp;—</span>
-                <span class="mr-2">Available {mo} &apos;23&nbsp;&nbsp;—</span>
+            <div className="relative flex overflow-hidden lg:max-w-[250px] xl:max-w-[300px]">
+              <div className="animate-marquee whitespace-nowrap">
+                <span className="mr-2">Available {mo} &apos;23&nbsp;&nbsp;—</span>
+                <span className="mr-2">Creative Developer &nbsp;&nbsp;—</span>
+                <span className="mr-2">Available {mo} &apos;23&nbsp;&nbsp;—</span>
+                <span className="mr-2">Creative Developer &nbsp;&nbsp;—</span>
+                <span className="mr-2">Available {mo} &apos;23&nbsp;&nbsp;—</span>
               </div>
 
-              <div class="absolute top-0 animate-marquee2 whitespace-nowrap">
-                <span class="mr-2">Creative Developer &nbsp;&nbsp;—</span>
-                <span class="mr-2">Available {mo} &apos;23&nbsp;&nbsp;—</span>
-                <span class="mr-2">Creative Developer &nbsp;&nbsp;—</span>
-                <span class="mr-2">Available {mo} &apos;23&nbsp;&nbsp;—</span>
-                <span class="mr-2">Creative Developer &nbsp;&nbsp;—</span>
+              <div className="absolute top-0 animate-marquee2 whitespace-nowrap">
+                <span className="mr-2">Creative Developer &nbsp;&nbsp;—</span>
+                <span className="mr-2">Available {mo} &apos;23&nbsp;&nbsp;—</span>
+                <span className="mr-2">Creative Developer &nbsp;&nbsp;—</span>
+                <span className="mr-2">Available {mo} &apos;23&nbsp;&nbsp;—</span>
+                <span className="mr-2">Creative Developer &nbsp;&nbsp;—</span>
               </div>
             </div>
           </div>

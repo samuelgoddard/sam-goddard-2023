@@ -336,6 +336,9 @@ export default function Home() {
                             <li className=" leading-[1.1] block text-2xl tracking-tight relative mb-[3px]">
                               <a href="https://lenis.studiofreight.com/" target="_blank" rel="noreferrer noopener" className="relative group overflow-hidden inline-block"><span className="block absolute bottom-0 left-0 w-full h-[1px] translate-y-[-1px] bg-white/50"></span>Lenis Scroll<span className="absolute inset-0 w-full h-full flex items-center justify-start"><span className="block transition-transform ease-in-out duration-[350ms] w-full h-[1px] bg-current translate-y-[-100%] translate-x-[-110%] lg:group-hover:translate-x-0"></span></span></a>
                             </li>
+                            <li className=" leading-[1.1] block text-2xl tracking-tight relative mb-[3px]">
+                              <a href="https://shopify.dev/docs/api/storefront" target="_blank" rel="noreferrer noopener" className="relative group overflow-hidden inline-block"><span className="block absolute bottom-0 left-0 w-full h-[1px] translate-y-[-1px] bg-white/50"></span>Shopify Storefront API<span className="absolute inset-0 w-full h-full flex items-center justify-start"><span className="block transition-transform ease-in-out duration-[350ms] w-full h-[1px] bg-current translate-y-[-100%] translate-x-[-110%] lg:group-hover:translate-x-0"></span></span></a>
+                            </li>
                           </ul>
                         </div>
 

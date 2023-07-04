@@ -39,3 +39,12 @@ html.lenis {
   background-position: 50% 50%;
   background-size: 480px;
 }
+
+@supports  (height: 100dvh) {
+  .h-screen {
+    height: 100dvh;
+  }
+  .min-h-screen {
+    min-height: 100dvh;
+  }
+}
