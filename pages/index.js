@@ -1,10 +1,8 @@
 import Layout from '@/components/layout'
-import Header from '@/components/header'
 import Footer from '@/components/footer'
 import Container from '@/components/container'
-import FancyLink from '@/components/fancyLink'
 import { fadeDelay, revealDelay, imageZoom, revealIntro } from '@/helpers/transitions'
-import { LazyMotion, domAnimation, m, AnimatePresence } from 'framer-motion'
+import { LazyMotion, domAnimation, m, AnimatePresence, useReducedMotion } from 'framer-motion'
 import { NextSeo } from 'next-seo'
 import { projects } from '@/helpers/projects'
 import { awards } from '@/helpers/awards'
@@ -16,16 +14,16 @@ import dynamic from 'next/dynamic';
 
 const CountUp = dynamic(() => import('react-countup'), { ssr: false });
 
-
 export default function Home() {
   const [hovered, setHovered] = useState(false);
   const [intro, setIntro] = useState(true);
   const [current, setCurrent] = useState(null);
+  const shouldReduceMotion = useReducedMotion()
 
   useEffect(() => {
     setTimeout(()=>{
      setIntro(false)
-    }, 3000)
+    }, shouldReduceMotion ? 0 : 3000)
 
   }, [intro])
 
@@ -40,7 +38,7 @@ export default function Home() {
   }
   return (
     <Layout>
-      <NextSeo title="Home" />
+      <NextSeo title="Creative Developer" />
       
       <LazyMotion features={domAnimation}>
         <m.div
@@ -101,7 +99,7 @@ export default function Home() {
                             transition={{ duration: 1.5, delay: 1, ease: [0.83, 0, 0.17, 1] }}
                             className="absolute inset-0 w-full h-full opacity-1"
                           >
-                            <Image src={`/images/intro04.jpg`} fill className={`absolute w-full h-full object-cover object-center`} alt={`Biographical image of Sam`} />
+                            <Image src={`/images/intro04.jpg`} fill className={`absolute w-full h-full object-cover object-center`} alt={`Biographical image of Sam`} sizes="(max-width: 1024px) 100vw,50vw" />
                           </m.div>
 
                           <m.div
@@ -110,7 +108,7 @@ export default function Home() {
                             transition={{ duration: 1.5, delay: 1, ease: [0.83, 0, 0.17, 1] }}
                             className="absolute inset-0 w-full h-full opacity-0"
                           >
-                            <Image src={`/images/intro03.jpg`} fill className={`absolute w-full h-full object-cover object-center`} alt={`Biographical image of Sam`} />
+                            <Image src={`/images/intro03.jpg`} fill className={`absolute w-full h-full object-cover object-center`} alt={`Biographical image of Sam`} sizes="(max-width: 1024px) 100vw,50vw" />
                           </m.div>
                         </m.div>
                       </div>
@@ -136,7 +134,7 @@ export default function Home() {
                               transition={{ duration: 1.5, delay: 1.25, ease: [0.83, 0, 0.17, 1] }}
                               className="absolute inset-0 w-full h-full opacity-1"
                             >
-                              <Image src={`/images/intro02.jpg`} fill className={`absolute w-full h-full object-cover object-center`} alt={`Biographical image of Sam`} />
+                              <Image src={`/images/intro02.jpg`} fill className={`absolute w-full h-full object-cover object-center`} alt={`Biographical image of Sam`} sizes="(max-width: 1024px) 100vw,50vw" />
                             </m.div>
 
                             <m.div
@@ -145,7 +143,7 @@ export default function Home() {
                               transition={{ duration: 1.5, delay: 1.25, ease: [0.83, 0, 0.17, 1] }}
                               className="absolute inset-0 w-full h-full opacity-0"
                             >
-                              <Image src={`/images/intro01.jpg`} fill className={`absolute w-full h-full object-cover object-center`} alt={`Biographical image of Sam`} />
+                              <Image src={`/images/intro01.jpg`} fill className={`absolute w-full h-full object-cover object-center`} alt={`Biographical image of Sam`} sizes="(max-width: 1024px) 100vw,50vw" />
                             </m.div>
                           </m.div>
                         </div>
@@ -162,16 +160,16 @@ export default function Home() {
             <div className="pt-[65px] lg:pt-[70px]">
               <Container>
                 <article>
-                  <div className="pb-[55vw] md:pb-[40vw] xl:pb-[35.25vw] mb-24 lg:mb-16 relative">
-                    <div className="absolute bottom-0 right-0 w-10/12 md:w-8/12 lg:w-[46%] aspect-square overflow-hidden bg-[#000] bg-opacity-50">
-                      <div className="opacity-[0.25] absolute inset-0 overflow-hidden ">
+                  <div className="pb-[65vw] md:pb-[55vw] lg:pb-[45vw] xl:pb-[36.25vw] 2xl:pb-[670px] mb-24 lg:mb-16 relative">
+                    <div className="absolute bottom-0 right-0 w-10/12 md:w-8/12 lg:w-[52%] xl:w-[44%] aspect-square overflow-hidden bg-[#000] bg-opacity-50 max-w-[800px]">
+                      <div className="opacity-[0.2] absolute inset-0 overflow-hidden ">
                         <m.div className="absolute inset-0 w-full h-full" variants={imageZoom}>
-                          <ImageScale image="/images/bio.jpg" alt="Portrait of Sam" />
+                          <ImageScale image="/images/bio.jpg" alt="Portrait of Sam" sizes="(max-width: 1024px) 100vw,65vw" />
                         </m.div>
                       </div>
                     </div>
                     <div className="w-full">
-                      <div className="leading-[1] uppercase text-[clamp(30px,0.92rem+4.9vw,90px)] font-display tracking-tight max-w-[2000px] w-full lg:w-11/12">
+                      <div className="leading-[1] uppercase text-[clamp(30px,0.92rem+4.9vw,90px)] font-display tracking-tight max-w-[1700px] w-full lg:w-11/12">
                         <h1 className="flex flex-wrap overflow-hidden justify-start w-full">
                           <SplitText
                             indent
@@ -188,7 +186,7 @@ export default function Home() {
                               })
                             }}
                           >
-                            I&rsquo;m a freelance creative developer With a keen focus on methodical code. I enjoy making websites that are innovative, user-focussed, accessible & performant.
+                            I&rsquo;m a freelance creative developer With a keen focus on methodical code. I enjoy making websites that are innovative, accessible & performant.
                           </SplitText>
                         </h1>
                       </div>
@@ -227,17 +225,8 @@ export default function Home() {
                               
                               <div className="absolute -top-5 right-[70px] z-[10] w-[35%] max-w-[600px] aspect-[16/10.7] pointer-events-none">
                                 {e.image && (
-                                  <div className="absolute top-0 right-0 w-full h-full transition-opacity ease-in-out duration-[400ms] bg-[#000] bg-opacity-50 opacity-0 lg:group-hover:opacity-[1] z-[10] overflow-hidden grayscale">
-                                    <Image src={`/images/${e.image}`} fill className={`absolute w-full h-full object-cover object-center transition-transform opacity-[0.55] ease-[cubic-bezier([0.83,0,0.17,1])] duration-[650ms] ${zoomState}`} alt={`Screenshot of the ${e.title} projects home page`} />
-                                  </div>
-                                )}
-
-                                {e.video && (
-                                  <div className="absolute top-0 right-0 w-full h-full transition-opacity ease-in-out duration-[400ms] opacity-0 lg:group-hover:opacity-[1] z-[10] overflow-hidden">
-                                    <video loop={true} autoPlay="autoplay" playsInline={true} muted className={`object-cover object-center w-full h-full absolute inset-0 ${zoomState}`}>
-                                      <source src={`/videos/${e.video}`} type="video/mp4" />
-                                      Sorry. Your browser does not support the video tag.
-                                    </video>
+                                  <div className="absolute top-0 right-0 w-full h-full transition-opacity ease-in-out duration-[400ms] bg-[#000] bg-opacity-50 opacity-0 lg:group-hover:opacity-[1] z-[10] overflow-hidden grayscale hidden lg:block">
+                                    <Image src={`/images/${e.image}`} fill className={`absolute w-full h-full object-cover object-center transition-transform opacity-[0.55] ease-[cubic-bezier([0.83,0,0.17,1])] duration-[800ms] ${zoomState}`} alt={`Screenshot of the ${e.title} projects home page`} sizes="(max-width: 1024px) 100vw,33vw" />
                                   </div>
                                 )}
                               </div>
@@ -252,7 +241,7 @@ export default function Home() {
                     <div className="w-[100%] lg:w-[85%] max-w-screen-2xl">
                       <h2 className="font-mono uppercase tracking-tight leading-[1] text-[10px] mb-5 pb-0 relative overflow-hidden"><m.span className="block" variants={revealDelay}>Features / Awards</m.span></h2>
 
-                      <h2 className="leading-[1] text-[clamp(30px,0.65rem+3.7vw,60px)] font-display tracking-tight w-[95%] lg:w-[90%] flex flex-wrap uppercase">
+                      <h2 className="leading-[1] text-[clamp(30px,0.65rem+3.7vw,60px)] font-display tracking-tight w-[95%] lg:w-[85%] flex flex-wrap uppercase">
                         I&rsquo;ve been fortunate enough to have worked with some incredibly talented studios & individuals across the globe, picking up some awards and recognition along the way
                       </h2>
                     </div>

@@ -25,3 +25,6 @@ h1, .h1, h2, .h2, h3, .h3 {
 .font-display {
   font-feature-settings: "ss01" 1;
 }
+.font-mono {
+  @apply tracking-wider !important;
+}

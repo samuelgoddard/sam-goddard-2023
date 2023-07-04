@@ -15,7 +15,7 @@ export const PPEditorialOld = localFont({
 export const SuisseIntlMono = localFont({
   src: [
     {
-      path: '../public/fonts/SuisseIntlMonoTrial.woff2',
+      path: '../public/fonts/SuisseIntlMono-Regular-WebS.woff2',
       weight: '400',
       style: 'normal',
     }
