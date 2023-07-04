@@ -63,7 +63,7 @@ export default function Home() {
                 <m.div
                   className="w-full h-full z-[100] flex flex-wrap items-center justify-center text-white bg-black relative"
                 >
-                  <span className="flex overflow-hidden text-3xl lg:text-4xl leading-none lg:leading-none relative z-[100]">
+                  <span className="flex overflow-hidden text-3xl lg:text-[39px] leading-none lg:leading-none relative z-[100]">
                     <m.span className="block" initial={{ y: '0'}} animate={{ y: '-120%' }} transition={{ duration: 1, delay: 2.25, ease: [0.83, 0, 0.17, 1] }}>
                       <m.span variants={revealIntro} className="flex">
                         <span className="">
@@ -248,7 +248,7 @@ export default function Home() {
                   </div>
 
                   <div className="pb-[20vw] lg:pb-[12.5vw]">
-                    <ul className="uppercase">
+                    <ul className="uppercase border-t border-white/30">
                       {awards.map((e, i) => {
                         return (
                           <li className="block" key={i}>
@@ -336,9 +336,6 @@ export default function Home() {
                             <li className=" leading-[1.1] block text-2xl tracking-tight relative mb-[3px]">
                               <a href="https://lenis.studiofreight.com/" target="_blank" rel="noreferrer noopener" className="relative group overflow-hidden inline-block"><span className="block absolute bottom-0 left-0 w-full h-[1px] translate-y-[-1px] bg-white/50"></span>Lenis Scroll<span className="absolute inset-0 w-full h-full flex items-center justify-start"><span className="block transition-transform ease-in-out duration-[350ms] w-full h-[1px] bg-current translate-y-[-100%] translate-x-[-110%] lg:group-hover:translate-x-0"></span></span></a>
                             </li>
-                            <li className=" leading-[1.1] block text-2xl tracking-tight relative mb-[3px]">
-                              <a href="https://shopify.dev/docs/api/storefront" target="_blank" rel="noreferrer noopener" className="relative group overflow-hidden inline-block"><span className="block absolute bottom-0 left-0 w-full h-[1px] translate-y-[-1px] bg-white/50"></span>Shopify Storefront API<span className="absolute inset-0 w-full h-full flex items-center justify-start"><span className="block transition-transform ease-in-out duration-[350ms] w-full h-[1px] bg-current translate-y-[-100%] translate-x-[-110%] lg:group-hover:translate-x-0"></span></span></a>
-                            </li>
                           </ul>
                         </div>
 
@@ -354,6 +351,10 @@ export default function Home() {
 
                             <li className=" leading-[1.1] block text-2xl tracking-tight relative mb-[3px]">
                               <a href="https://github.com/samuelgoddard/" target="_blank" rel="noreferrer noopener" className="relative group overflow-hidden inline-block"><span className="block absolute bottom-0 left-0 w-full h-[1px] translate-y-[-1px] bg-white/50"></span>Github<span className="absolute inset-0 w-full h-full flex items-center justify-start"><span className="block transition-transform ease-in-out duration-[350ms] w-full h-[1px] bg-current translate-y-[-100%] translate-x-[-110%] lg:group-hover:translate-x-0"></span></span></a>
+                            </li>
+                            
+                            <li className=" leading-[1.1] block text-2xl tracking-tight relative mb-[3px]">
+                              <a href="https://shopify.dev/docs/api/storefront" target="_blank" rel="noreferrer noopener" className="relative group overflow-hidden inline-block"><span className="block absolute bottom-0 left-0 w-full h-[1px] translate-y-[-1px] bg-white/50"></span>Storefront API<span className="absolute inset-0 w-full h-full flex items-center justify-start"><span className="block transition-transform ease-in-out duration-[350ms] w-full h-[1px] bg-current translate-y-[-100%] translate-x-[-110%] lg:group-hover:translate-x-0"></span></span></a>
                             </li>
                           </ul>
                         </div>

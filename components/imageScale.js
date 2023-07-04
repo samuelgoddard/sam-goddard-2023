@@ -19,6 +19,7 @@ export default function ImageScale({ image, w, h, p, alt, sizes }) {
         fill
         src={image}
         alt={alt}
+        priority
         className={`w-full h-full inset-0 object-cover object-center transition-all ease-ak duration-[1000ms] will-change-transform mt-[-4%] ${imageIsLoaded ? 'scale-[1.075]' : 'scale-[1.1]' }`}
         sizes={sizes ? sizes : `(max-width: 1024px) 100vw,90vw`}
         ref={ref}
