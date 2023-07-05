@@ -8,7 +8,7 @@ export default function Header() {
   let mo = new Intl.DateTimeFormat('en', { month: 'long' }).format(current);
 
   return (
-    <header className={`fixed top-0 left-0 right-0 z-[100] transition-colors ease-[cubic-bezier([0.83,0,0.17,1])] duration-[500ms] delay-[50ms]bg-black text-white selection:bg-white selection:text-black`}>
+    <header className={`fixed top-0 left-0 right-0 z-[100] transition-colors ease-[cubic-bezier([0.83,0,0.17,1])] duration-[500ms] delay-[50ms] bg-black text-white selection:bg-white selection:text-black`}>
       <Container>
         <div className="grid grid-cols-3 lg:grid-cols-4 text-xl leading-none lg:text-2xl lg:leading-none border-b border-b-current pt-4 pb-3 lg:pt-4 lg:pb-3 items-center">
           <div className="col-span-1 text-left">
