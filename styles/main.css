@@ -48,3 +48,7 @@ html.lenis {
     min-height: 100dvh;
   }
 }
+
+_:-ms-lang(x), .ms-text-adjust {
+  @apply mb-[-2.5%];
+}

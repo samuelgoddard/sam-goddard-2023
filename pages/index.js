@@ -215,8 +215,12 @@ export default function Home() {
                               <span className={`block font-serif italic text-[clamp(16px,0.7rem+1.5vw,30px)] tracking-normal leading-none mr-2 lgmr-3 translate-y-[2px] relative overflow-hidden z-[1] transition-opacity ease-[cubic-bezier([0.83,0,0.17,1])] duration-[400ms] ${innerState}`}>
                                 <m.span className="block" variants={revealDelay}>{i < 9 && ('0')}{i+1}</m.span>
                               </span>
-                              <span className={`leading-[0.9] block text-[clamp(30px,0.92rem+4.4vw,100px)] font-display tracking-tight relative overflow-hidden z-[1] transition-opacity ease-[cubic-bezier([0.83,0,0.17,1])] duration-[400ms] ${innerState}`}>
-                                <m.span className="block" variants={revealDelay}>{e.title}</m.span>
+                              <span className="block overflow-hidden">
+                                <span className={`leading-[0.95] block text-[clamp(30px,0.92rem+4.4vw,100px)] font-display tracking-tight relative z-[1] transition-opacity ease-[cubic-bezier([0.83,0,0.17,1])] duration-[400ms] ${innerState}`}>
+                                  <m.span className="block ms-text-adjust" variants={revealDelay}>
+                                    <span clasName="block ms-text-adjust">{e.title}</span>
+                                  </m.span>
+                                </span>
                               </span>
                               
                               <span className={`ml-auto text-right font-mono text-[10px] tracking-tight leading-none hidden lg:block relative overflow-hidden z-[1] transition-opacity ease-[cubic-bezier([0.83,0,0.17,1])] duration-[400ms] ${innerState}`}>
