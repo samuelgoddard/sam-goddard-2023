@@ -36,7 +36,7 @@ html.lenis {
 .grain {
   @apply fixed inset-0 w-full h-full overflow-hidden z-[99999] opacity-[0.022] bg-repeat pointer-events-none;
   background-image: url("/images/grain.gif");
-  background-position: 50% 50%;
+  background-position: 100% 100%;
   background-size: 480px;
 }
 

@@ -10,9 +10,9 @@ import Image from 'next/image'
 import { useEffect, useState } from 'react'
 import ImageScale from '@/components/imageScale'
 import { SplitText } from '@/components/splitText'
-// import dynamic from 'next/dynamic';
+import dynamic from 'next/dynamic';
 
-// const CountUp = dynamic(() => import('react-countup'), { ssr: false });
+const CountUp = dynamic(() => import('react-countup'), { ssr: false });
 
 export default function Home() {
   const [hovered, setHovered] = useState(false);
@@ -70,7 +70,7 @@ export default function Home() {
                           <span className="block">Sam Goddard </span>
                         </span>
                         <span className="ml-1 md:ml-3 flex items-center">
-                          &apos;89&nbsp;—
+                          &apos;<CountUp className="block tabular-nums w-[35px]" duration={2.4} end={89} start={50} delay={0.75} />&nbsp;—
                         </span>  
                       </m.span>
                     </m.span>

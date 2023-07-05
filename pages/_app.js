@@ -15,11 +15,12 @@ export default function App({ Component, pageProps }) {
       <DefaultSeo {...SEO} /> 
 
       <div className={`${MigraExtralight.variable} ${SuisseIntlMono.variable} ${PPEditorialOld.variable} font-serif transition-colors ease-[cubic-bezier([0.83,0,0.17,1])] duration-[500ms] delay-[50ms] ${router.asPath == '/' ? 'bg-black text-white selection:bg-white selection:text-black' : 'bg-white text-black selection:bg-black selection:text-white' }`}>
-        <div className="grain"></div>       
+        <div className="grain"></div>
+            
         <Header />
         
         <MotionConfig reducedMotion="user">
-          <AnimatePresence mode="wait" initial={true}>
+          <AnimatePresence mode="wait">
             <Component {...pageProps} key={router.asPath} />
           </AnimatePresence>
         </MotionConfig>
