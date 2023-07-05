@@ -39,7 +39,7 @@ export default function Home() {
   }
   return (
     <Layout>
-      <NextSeo title="Creative Developer" />
+      <NextSeo title="Nether Realm" />
       
       <div className="h-screen flex flex-col justify-center items-center">
         <LazyMotion features={domAnimation}>
