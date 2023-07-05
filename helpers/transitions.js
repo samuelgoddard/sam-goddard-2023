@@ -1,3 +1,15 @@
+export const grain = {
+	initial: { opacity: 0 },
+  enter: { 
+    opacity: 0.015,
+    transition: { duration: 1, ease: [0.83, 0, 0.17, 1] }
+  },
+	exit: {
+    opacity: 0,
+		transition: { duration: 0, ease: [0.83, 0, 0.17, 1] }
+	}
+}
+
 export const fadeDelay = {
 	initial: { opacity: 0 },
   enter: { 

@@ -1,7 +1,7 @@
 import Layout from '@/components/layout'
 import Footer from '@/components/footer'
 import Container from '@/components/container'
-import { fadeDelay, revealDelay, imageZoom, revealIntro } from '@/helpers/transitions'
+import { fadeDelay, revealDelay, imageZoom, revealIntro, grain } from '@/helpers/transitions'
 import { LazyMotion, domAnimation, m, AnimatePresence, useReducedMotion } from 'framer-motion'
 import { NextSeo } from 'next-seo'
 import { projects } from '@/helpers/projects'
@@ -155,6 +155,7 @@ export default function Home() {
             )}
           </AnimatePresence>
 
+          <m.div variants={grain} className="grain"></m.div>
 
           <m.main variants={fadeDelay}>
             <div className="pt-[65px] lg:pt-[70px]">
