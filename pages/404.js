@@ -78,7 +78,7 @@ export default function Home() {
                             </SplitText>
                           </h1>
 
-                          <h2 className="font-mono uppercase tracking-tight leading-[1] text-[10px] mb-5 pb-0 relative overflow-hidden"><m.span variants={reveal} className="block p-[5px]">Why don't you head back <Link href="/" className="inline-block group a11y-focus border-b pb-[3px] border-white">to safety</Link></m.span></h2>
+                          <h2 className="font-mono uppercase tracking-tight leading-[1] text-[10px] mb-5 pb-0 relative overflow-hidden"><m.span variants={reveal} className="block p-[5px]">Why don&apos;t you head back <Link href="/" className="inline-block group a11y-focus border-b pb-[3px] border-white">to safety</Link></m.span></h2>
                         </div>
                       </div>
                     </div>
