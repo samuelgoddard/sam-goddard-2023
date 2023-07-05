@@ -16,9 +16,9 @@ export default function Header() {
         <div className="grid grid-cols-3 lg:grid-cols-4 text-xl leading-none lg:text-2xl lg:leading-none border-b border-b-current pt-4 pb-3 lg:pt-4 lg:pb-3 items-center">
           <div className="col-span-1 text-left">
             <div className="lg:flex lg:space-x-3">
-              <Link href="/" className="inline-block lg:block">
+              <div className="inline-block lg:block">
                 <span className="inline lg:block relative overflow-hidden">S<span className="hidden lg:inline">am</span><span className="hidden lg:inline">&nbsp;</span>G<span className="hidden lg:inline">oddard</span>&nbsp; <span className="hidden lg:flex absolute inset-0 w-full h-full items-center justify-start"><span className="block transition-transform ease-in-out duration-[350ms] w-full h-[1px] bg-current translate-y-[-100%] translate-x-[-110%] lg:group-hover:translate-x-0"></span></span></span>
-              </Link>
+              </div>
               
               <span className="inline lg:block">&apos;89 —</span>
             </div>
@@ -58,7 +58,7 @@ export default function Header() {
           </div> */}
 
           <div className="col-start-2 lg:col-start-4 col-span-2 lg:col-span-1 text-right">
-            <a href="#collab" onClick={()=> lenis?.scrollTo('#collab', { lerp: 0.15 } )} className="group flex justify-end">
+            <a href="#collab" onClick={()=> lenis?.scrollTo('#collab', { lerp: 0.15 } )} className="group inline-flex justify-end a11y-focus">
               <span className="block relative overflow-hidden leading-none">Let&apos;s Collaborate <span className="absolute inset-0 w-full h-full flex items-center justify-start"><span className="block transition-transform ease-in-out duration-[350ms] w-full h-[1px] bg-current translate-y-[-100%] translate-x-[-110%] lg:group-hover:translate-x-0"></span></span></span>
             </a>
           </div>

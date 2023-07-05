@@ -28,3 +28,7 @@ h1, .h1, h2, .h2, h3, .h3 {
 .font-mono {
   @apply tracking-wider !important;
 }
+
+.a11y-focus {
+  @apply focus-visible:border-none focus-visible:outline-none focus-visible:ring-1 ring-white ring-offset-4 ring-offset-black;
+}
