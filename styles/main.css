@@ -49,6 +49,8 @@ html.lenis {
   }
 }
 
-_:-ms-lang(x), .ms-text-adjust {
-  @apply mb-[-2.5%];
+@supports (-ms-ime-align:auto) {
+  .ms-text-adjust {
+    @apply translate-y-[10px];
+  }
 }

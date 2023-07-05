@@ -217,7 +217,7 @@ export default function Home() {
                               </span>
                               <span className="block overflow-hidden">
                                 <span className={`leading-[0.95] block text-[clamp(30px,0.92rem+4.4vw,100px)] font-display tracking-tight relative z-[1] transition-opacity ease-[cubic-bezier([0.83,0,0.17,1])] duration-[400ms] ${innerState}`}>
-                                  <m.span className="block ms-text-adjust" variants={revealDelay}>
+                                  <m.span className="block" variants={revealDelay}>
                                     <span className="block ms-text-adjust">{e.title}</span>
                                   </m.span>
                                 </span>
