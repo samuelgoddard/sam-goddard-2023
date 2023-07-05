@@ -40,6 +40,12 @@ html.lenis {
   background-size: 480px;
 }
 
+@media (prefers-reduced-motion) {
+  .grain {
+    @apply hidden opacity-0 !important
+  }
+}
+
 @supports  (height: 100dvh) {
   .h-screen {
     height: 100dvh;
