@@ -49,7 +49,7 @@ html.lenis {
   }
 }
 
-@supports (-ms-ime-align:auto) {
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
   .ms-text-adjust {
     @apply translate-y-[10px];
   }
