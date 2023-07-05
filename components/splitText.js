@@ -15,7 +15,9 @@ export function SplitText({ children, display, text, indent, ...rest }) {
           custom={i}
         >
           <span className={`block mb-0 pb-0 pr-[1px] ${ (indent && i == 0) && 'ml-[10vw]'}`}>
-            {word + (i !== words.length - 1 ? '\u00A0' : '')}
+            <span className="block ms-text-adjust">
+              {word + (i !== words.length - 1 ? '\u00A0' : '')}
+            </span>
           </span>
         </m.span>
       </span>

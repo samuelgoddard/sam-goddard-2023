@@ -99,7 +99,7 @@ export default function Home() {
                             transition={{ duration: 1.5, delay: 1, ease: [0.83, 0, 0.17, 1] }}
                             className="absolute inset-0 w-full h-full opacity-1"
                           >
-                            <Image src={`/images/intro04.jpg`} fill className={`absolute w-full h-full object-cover object-center`} alt={`Biographical image of Sam`} sizes="(max-width: 1024px) 100vw,50vw" />
+                            <Image src={`/images/intro04.jpg`} priority fill className={`absolute w-full h-full object-cover object-center`} alt={`Biographical image of Sam`} sizes="(max-width: 1024px) 100vw,50vw" />
                           </m.div>
 
                           <m.div
@@ -108,12 +108,12 @@ export default function Home() {
                             transition={{ duration: 1.5, delay: 1, ease: [0.83, 0, 0.17, 1] }}
                             className="absolute inset-0 w-full h-full opacity-0"
                           >
-                            <Image src={`/images/intro03.jpg`} fill className={`absolute w-full h-full object-cover object-center`} alt={`Biographical image of Sam`} sizes="(max-width: 1024px) 100vw,50vw" />
+                            <Image src={`/images/intro03.jpg`} priority fill className={`absolute w-full h-full object-cover object-center`} alt={`Biographical image of Sam`} sizes="(max-width: 1024px) 100vw,50vw" />
                           </m.div>
                         </m.div>
                       </div>
 
-                      <div div className="absolute right-0 bottom-0 bg-[#000] bg-opacity-30 w-[45vw] h-[50vh] lg:h-[75vh] overflow-hidden m-4 lg:m-5">
+                      <div className="absolute right-0 bottom-0 bg-[#000] bg-opacity-30 w-[45vw] h-[50vh] lg:h-[75vh] overflow-hidden m-4 lg:m-5">
                         <m.div 
                           initial={{ y: 0 }}
                           animate={{ y: "-100%" }}
@@ -134,7 +134,7 @@ export default function Home() {
                               transition={{ duration: 1.5, delay: 1.25, ease: [0.83, 0, 0.17, 1] }}
                               className="absolute inset-0 w-full h-full opacity-1"
                             >
-                              <Image src={`/images/intro02.jpg`} fill className={`absolute w-full h-full object-cover object-center`} alt={`Biographical image of Sam`} sizes="(max-width: 1024px) 100vw,50vw" />
+                              <Image src={`/images/intro02.jpg`} priority fill className={`absolute w-full h-full object-cover object-center`} alt={`Biographical image of Sam`} sizes="(max-width: 1024px) 100vw,50vw" />
                             </m.div>
 
                             <m.div
@@ -143,7 +143,7 @@ export default function Home() {
                               transition={{ duration: 1.5, delay: 1.25, ease: [0.83, 0, 0.17, 1] }}
                               className="absolute inset-0 w-full h-full opacity-0"
                             >
-                              <Image src={`/images/intro01.jpg`} fill className={`absolute w-full h-full object-cover object-center`} alt={`Biographical image of Sam`} sizes="(max-width: 1024px) 100vw,50vw" />
+                              <Image src={`/images/intro01.jpg`} priority fill className={`absolute w-full h-full object-cover object-center`} alt={`Biographical image of Sam`} sizes="(max-width: 1024px) 100vw,50vw" />
                             </m.div>
                           </m.div>
                         </div>
@@ -257,11 +257,15 @@ export default function Home() {
                         return (
                           <li className="block" key={i}>
                             <span className=" border-b border-white/30 w-full py-2 lg:py-1 block lg:flex lg:items-end">
-                              <span className="leading-[1.275] block text-[clamp(18px,0.92rem+1.15vw,34px)] font-display tracking-tight mb-1 lg:mb-0 relative overflow-hidden"><m.span className="block" variants={revealDelay}>{e.title}</m.span></span>
+                              <span className="leading-[1.275] block text-[clamp(18px,0.92rem+1.15vw,34px)] font-display tracking-tight mb-1 lg:mb-0 relative overflow-hidden"><m.span className="block" variants={revealDelay}><span className="block ms-text-adjust">{e.title}</span></m.span></span>
                               <span className="ml-auto leading-[1.275] font-serif lg:font-display block text-xl lg:text-[clamp(15px,0.92rem+1.15vw,34px)] tracking-tight relative overflow-hidden">
                                 <m.span className="block" variants={revealDelay}>
                                   <span className="flex items-end">
-                                    <span className="block">{e.award}</span>
+                                    <span className="block">
+                                      <span className="block ms-text-adjust">
+                                        {e.award}
+                                      </span>
+                                    </span>
                                     <span className="block font-serif italic text-[clamp(14px,0.7rem+0.65vw,25px)] tracking-normal leading-none pl-2 pr-1 translate-y-[-45%] md:translate-y-[-30%] lg:translate-y-[-32%]">( {e.meta} )</span>
                                   </span>
                                 </m.span>

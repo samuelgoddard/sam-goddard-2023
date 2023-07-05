@@ -57,7 +57,7 @@ export default function Header() {
             </nav>
           </div> */}
 
-          <div className="col-start-3 lg:col-start-4 col-span-1 text-right">
+          <div className="col-start-2 lg:col-start-4 col-span-2 lg:col-span-1 text-right">
             <a href="#collab" onClick={()=> lenis?.scrollTo('#collab', { lerp: 0.15 } )} className="group flex justify-end">
               <span className="block relative overflow-hidden leading-none">Let&apos;s Collaborate <span className="absolute inset-0 w-full h-full flex items-center justify-start"><span className="block transition-transform ease-in-out duration-[350ms] w-full h-[1px] bg-current translate-y-[-100%] translate-x-[-110%] lg:group-hover:translate-x-0"></span></span></span>
             </a>

@@ -48,9 +48,10 @@ html.lenis {
     min-height: 100dvh;
   }
 }
-
-@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+/*! purgecss start ignore */
+.windows {
   .ms-text-adjust {
-    @apply translate-y-[10px];
+    @apply translate-y-[11%];
   }
 }
+/*! purgecss end ignore */
