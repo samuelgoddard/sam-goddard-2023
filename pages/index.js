@@ -161,7 +161,7 @@ export default function Home() {
             <div className="pt-[65px] lg:pt-[70px]">
               <Container>
                 <article>
-                  <div className="pb-[65vw] md:pb-[55vw] lg:pb-[45vw] xl:pb-[36.25vw] 2xl:pb-[670px] mb-24 lg:mb-16 relative">
+                  <div className="pb-[61vw] md:pb-[55vw] lg:pb-[45vw] xl:pb-[36.25vw] 2xl:pb-[670px] mb-24 lg:mb-16 relative">
                     <div className="absolute bottom-0 right-0 w-10/12 md:w-8/12 lg:w-[52%] xl:w-[44%] aspect-square overflow-hidden bg-[#000] bg-opacity-50 max-w-[800px]">
                       <div className="opacity-[0.2] absolute inset-0 overflow-hidden ">
                         <m.div className="absolute inset-0 w-full h-full" variants={imageZoom}>
@@ -300,7 +300,7 @@ export default function Home() {
                             </div>
                           </div>
 
-                          <div className="mb-8 lg:mb-12 col-span-1">
+                          <div className="mb-16 lg:mb-12 col-span-1">
                             <span className="block font-mono tracking-tight leading-none text-[10px] uppercase mb-3 pb-0">Twitter</span>
                             <span className="leading-[1.1] text-2xl tracking-tight relative flex">
                               @&nbsp;<a href="https://twitter.com/samuelgoddard/" target="_blank" rel="noopener noreferrer" className="flex relative overflow-hidden group">
@@ -322,7 +322,7 @@ export default function Home() {
                             </span>
                           </div>
                           
-                          <div className="mb-8 lg:mb-12 col-span-1">
+                          <div className="mb-16 lg:mb-12 col-span-1">
                             <span className="block font-mono tracking-tight leading-none text-[10px] uppercase mb-3 pb-0">Site Design</span>
                             <a href="https://ijpowell.co.uk" target="_blank" rel="noopener noreferrer" className="leading-[1.1] inline-block text-2xl tracking-tight relative group"><span className="block absolute bottom-0 left-0 w-full h-[1px] translate-y-[-1px] bg-white/50 "></span><span className="block relative overflow-hidden">Isaac Powell <span className="absolute inset-0 w-full h-full flex items-center justify-start"><span className="block transition-transform ease-in-out duration-[350ms] w-full h-[1px] bg-current translate-y-[-100%] translate-x-[-110%] lg:group-hover:translate-x-0"></span></span></span></a>
                           </div>
@@ -331,7 +331,7 @@ export default function Home() {
                           <span className="uppercase block font-mono  tracking-tight leading-none text-[10px] mb-3 pb-0">Front-end Stack</span>
                           <ul>
                             <li className=" leading-[1.1] block text-2xl tracking-tight relative mb-[3px]">
-                              <a href="https://react.dev/" target="_blank" rel="noreferrer noopener" className="relative group overflow-hidden inline-block"><span className="block absolute bottom-0 left-0 w-full h-[1px] translate-y-[-1px] bg-white/50"></span>React <span className="absolute inset-0 w-full h-full flex items-center justify-start"><span className="block transition-transform ease-in-out duration-[350ms] w-full h-[1px] bg-current translate-y-[-100%] translate-x-[-110%] lg:group-hover:translate-x-0"></span></span></a>
+                              <a href="https://react.dev/" target="_blank" rel="noreferrer noopener" className="relative group overflow-hidden inline-block"><span className="block absolute bottom-0 left-0 w-full h-[1px] translate-y-[-1px] bg-white/50"></span>React<span className="absolute inset-0 w-full h-full flex items-center justify-start"><span className="block transition-transform ease-in-out duration-[350ms] w-full h-[1px] bg-current translate-y-[-100%] translate-x-[-110%] lg:group-hover:translate-x-0"></span></span></a>
                             </li>
                             <li className=" leading-[1.1] block text-2xl tracking-tight relative mb-[3px]">
                               <a href="https://nextjs.org/" target="_blank" rel="noreferrer noopener" className="relative group overflow-hidden inline-block"><span className="block absolute bottom-0 left-0 w-full h-[1px] translate-y-[-1px] bg-white/50"></span>NextJs<span className="absolute inset-0 w-full h-full flex items-center justify-start"><span className="block transition-transform ease-in-out duration-[350ms] w-full h-[1px] bg-current translate-y-[-100%] translate-x-[-110%] lg:group-hover:translate-x-0"></span></span></a>
