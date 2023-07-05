@@ -25,7 +25,7 @@ export default function Home() {
      setIntro(false)
     }, shouldReduceMotion ? 0 : 3000)
 
-  }, [intro])
+  }, [intro, shouldReduceMotion])
 
   function handleHover(e) {
     setHovered(true)

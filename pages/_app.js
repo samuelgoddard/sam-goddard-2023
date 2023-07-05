@@ -21,7 +21,7 @@ export default function App({ Component, pageProps }) {
     <ReactLenis root options={{ lerp: 0.15 }}>
       <DefaultSeo {...SEO} /> 
 
-      <div className={`${MigraExtralight.variable} ${SuisseIntlMono.variable} ${PPEditorialOld.variable} font-serif transition-colors ease-[cubic-bezier([0.83,0,0.17,1])] duration-[500ms] delay-[50ms] ${windows ? 'windows' : 'mac'} ${router.asPath == '/' ? 'bg-black text-white selection:bg-white selection:text-black' : 'bg-white text-black selection:bg-black selection:text-white' }`}>
+      <div className={`${MigraExtralight.variable} ${SuisseIntlMono.variable} ${PPEditorialOld.variable} font-serif transition-colors ease-[cubic-bezier([0.83,0,0.17,1])] duration-[500ms] delay-[50ms] ${windows ? 'windows' : 'mac'} bg-black text-white selection:bg-white selection:text-black`}>
             
         <Header />
         
