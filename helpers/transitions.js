@@ -1,7 +1,7 @@
 export const grain = {
 	initial: { opacity: 0 },
   enter: { 
-    opacity: 0.015,
+    opacity: 0.0175,
     transition: { duration: 1, ease: [0.83, 0, 0.17, 1] }
   },
 	exit: {
