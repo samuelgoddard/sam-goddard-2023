@@ -61,7 +61,7 @@ export default function Home() {
                 ></m.div>
 
                 <m.div
-                  className="w-full h-full z-[100] flex flex-wrap items-center justify-center text-white bg-black relative"
+                  className="w-full h-full z-[100] flex flex-wrap items-center justify-center text-white bg-black relative" id="top"
                 >
                   <span className="flex overflow-hidden text-3xl lg:text-[39px] leading-none lg:leading-none relative z-[100]">
                     <m.span className="block" initial={{ y: '0'}} animate={{ y: '-120%' }} transition={{ duration: 1, delay: 2.25, ease: [0.83, 0, 0.17, 1] }}>
@@ -218,7 +218,7 @@ export default function Home() {
                               <span className="block overflow-hidden">
                                 <span className={`leading-[0.95] block text-[clamp(30px,0.92rem+4.4vw,100px)] font-display tracking-tight relative z-[1] transition-opacity ease-[cubic-bezier([0.83,0,0.17,1])] duration-[400ms] ${innerState}`}>
                                   <m.span className="block ms-text-adjust" variants={revealDelay}>
-                                    <span clasName="block ms-text-adjust">{e.title}</span>
+                                    <span className="block ms-text-adjust">{e.title}</span>
                                   </m.span>
                                 </span>
                               </span>
@@ -274,7 +274,7 @@ export default function Home() {
                     <span className="block mt-3 lg:mt-5 font-mono uppercase tracking-tight leading-none text-[10px] mb-3 pb-0 lg:text-right lg:ml-auto opacity-90">* Nominee / ** Special Kudos Award</span>
                   </div>
 
-                  <div className="grid grid-cols-12 pb-[20vw] lg:pb-[12.5vw]">
+                  <div className="grid grid-cols-12 pb-[20vw] lg:pb-[12.5vw]" id="collab">
                     <div className="col-span-12 lg:col-span-4 mb-2 lg:mb-0">
                       <h2 className="font-mono uppercase tracking-tight leading-none text-[10px] mb-3 pb-0">Let&rsquo;s Collaborate</h2>
                     </div>
