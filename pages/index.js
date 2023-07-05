@@ -247,7 +247,7 @@ export default function Home() {
                       <h2 className="font-mono uppercase tracking-tight leading-[1] text-[10px] mb-5 pb-0 relative overflow-hidden"><m.span className="block" variants={revealDelay}>Features / Awards</m.span></h2>
 
                       <h2 className="leading-[1] text-[clamp(30px,0.65rem+3.7vw,60px)] font-display tracking-tight w-[95%] lg:w-[85%] flex flex-wrap uppercase">
-                        I&rsquo;ve been fortunate enough to have worked with some incredibly talented studios & individuals across the globe, picking up some awards and recognition along the way
+                        I&rsquo;ve been fortunate enough to have worked with some incredibly talented studios & individuals across the globe, picking up some awards and recognition along the way.
                       </h2>
                     </div>
                   </div>
@@ -323,7 +323,7 @@ export default function Home() {
                           </div>
                           
                           <div className="mb-16 lg:mb-12 col-span-1">
-                            <span className="block font-mono tracking-tight leading-none text-[10px] uppercase mb-3 pb-0">Site Design</span>
+                            <span className="block font-mono tracking-tight leading-none text-[10px] uppercase mb-3 pb-0">Design Partner</span>
                             <a href="https://ijpowell.co.uk" target="_blank" rel="noopener noreferrer" className="leading-[1.1] inline-block text-2xl tracking-tight relative group a11y-focus"><span className="block absolute bottom-0 left-0 w-full h-[1px] translate-y-[-1px] bg-white/50 "></span><span className="block relative overflow-hidden">Isaac Powell <span className="absolute inset-0 w-full h-full flex items-center justify-start"><span className="block transition-transform ease-in-out duration-[350ms] w-full h-[1px] bg-current translate-y-[-100%] translate-x-[-110%] lg:group-hover:translate-x-0"></span></span></span></a>
                           </div>
 

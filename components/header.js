@@ -1,5 +1,4 @@
 import Container from '@/components/container'
-import Link from 'next/link'
 import { useRouter } from 'next/router'
 import { useLenis } from '@studio-freight/react-lenis'
 
