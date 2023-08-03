@@ -31,7 +31,7 @@ export const projects = [
   },
   {
     title: "PRB Architects",
-    url: "https://prb-a.com",
+    url: "https://prb-archive.netlify.app/",
     image: "sg-prb.jpg"
   },
   {
