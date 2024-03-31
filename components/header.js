@@ -24,18 +24,18 @@ export default function Header() {
           <div className="col-span-2 text-center hidden lg:flex justify-center items-center">
             <div className="relative flex overflow-hidden lg:max-w-[250px] xl:max-w-[300px]">
               <div className="animate-marquee whitespace-nowrap">
-                <span className="mr-2">Available {mo} &apos;23&nbsp;&nbsp;—</span>
+                <span className="mr-2">Senior Design Engineer &nbsp;&nbsp;—</span>
                 <span className="mr-2">Creative Developer &nbsp;&nbsp;—</span>
-                <span className="mr-2">Available {mo} &apos;23&nbsp;&nbsp;—</span>
+                <span className="mr-2">Senior Design Engineer &nbsp;&nbsp;—</span>
                 <span className="mr-2">Creative Developer &nbsp;&nbsp;—</span>
-                <span className="mr-2">Available {mo} &apos;23&nbsp;&nbsp;—</span>
+                <span className="mr-2">Senior Design Engineer &nbsp;&nbsp;—</span>
               </div>
 
               <div className="absolute top-0 animate-marquee2 whitespace-nowrap">
                 <span className="mr-2">Creative Developer &nbsp;&nbsp;—</span>
-                <span className="mr-2">Available {mo} &apos;23&nbsp;&nbsp;—</span>
+                <span className="mr-2">Senior Design Engineer &nbsp;&nbsp;—</span>
                 <span className="mr-2">Creative Developer &nbsp;&nbsp;—</span>
-                <span className="mr-2">Available {mo} &apos;23&nbsp;&nbsp;—</span>
+                <span className="mr-2">Senior Design Engineer &nbsp;&nbsp;—</span>
                 <span className="mr-2">Creative Developer &nbsp;&nbsp;—</span>
               </div>
             </div>

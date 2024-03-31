@@ -187,7 +187,7 @@ export default function Home() {
                               })
                             }}
                           >
-                            I&rsquo;m a freelance creative developer With a keen focus on methodical code. I enjoy making websites that are innovative, accessible & performant.
+                            I&rsquo;m a senior design engineer With a keen focus on methodical code. I enjoy making websites that are innovative, accessible & performant.
                           </SplitText>
                         </h1>
                       </div>
